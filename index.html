@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>АрхДизайн — Архитектурное проектирование и дизайн интерьера</title>
+  <meta name="description" content="АрхДизайн — премиальная студия архитектурного проектирования и дизайна интерьера. Частные резиденции, коммерческие пространства, авторский надзор. Москва и международные проекты.">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- ═══ LOADER ═══ -->
+  <div id="loader">
+    <div class="loader-content">
+      <div class="loader-logo"><img src="assets/logo.png" alt="АрхДизайн" class="loader-logo-img"> АРХДИЗАЙН</div>
+      <div class="loader-bar"><div class="loader-fill" id="loaderFill"></div></div>
+      <div class="loader-pct" id="loaderPct">0%</div>
+    </div>
+  </div>
+
+  <!-- ═══ SCROLL CANVAS ═══ -->
+  <canvas id="scrollCanvas"></canvas>
+
+  <!-- ═══ HEADER ═══ -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <img src="assets/logo.png" alt="АрхДизайн" class="logo-img">
+        <span class="logo-text">АРХДИЗАЙН</span>
+      </a>
+      <nav class="desktop-nav" id="desktopNav">
+        <a href="#" class="nav-link active" data-section="0">Главная</a>
+        <a href="#" class="nav-link" data-section="1">Услуги</a>
+        <a href="#" class="nav-link" data-section="2">Портфолио</a>
+        <a href="#" class="nav-link" data-section="3">Процесс</a>
+        <a href="#" class="nav-link" data-section="4">О студии</a>
+        <a href="#" class="nav-link" data-section="5">Контакты</a>
+      </nav>
+      <a href="tel:+74951234567" class="header-cta">+7 (495) 123-45-67</a>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="#" class="nav-link" data-section="0">Главная</a>
+      <a href="#" class="nav-link" data-section="1">Услуги</a>
+      <a href="#" class="nav-link" data-section="2">Портфолио</a>
+      <a href="#" class="nav-link" data-section="3">Процесс</a>
+      <a href="#" class="nav-link" data-section="4">О студии</a>
+      <a href="#" class="nav-link" data-section="5">Контакты</a>
+    </nav>
+  </header>
+
+  <!-- ═══ PAGES ═══ -->
+  <div class="scroll-container" id="scrollContainer">
+
+    <!-- ── 0: HERO ── -->
+    <section class="page" id="page-0">
+      <div class="page-inner hero-content">
+        <div class="hero-badge">АРХИТЕКТУРА • ИНТЕРЬЕР • АВТОРСКИЙ НАДЗОР</div>
+        <h1 class="hero-title">
+          <span class="hero-line1">ПРОСТРАНСТВО</span>
+          <span class="hero-line2 accent-text">КОТОРОЕ ВДОХНОВЛЯЕТ</span>
+        </h1>
+        <p class="hero-sub">Архитектурное проектирование и дизайн интерьера премиум-класса. Создаём среду, в которой каждая деталь работает на вас — от концепции до воплощения.</p>
+        <div class="hero-buttons">
+          <a href="#" class="btn btn-primary" data-section="5">Обсудить проект</a>
+          <a href="#" class="btn btn-outline" data-section="2">Портфолио</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num accent-text">14</span><span class="stat-label">Лет практики</span></div>
+          <div class="stat"><span class="stat-num accent-text">380+</span><span class="stat-label">Проектов</span></div>
+          <div class="stat"><span class="stat-num accent-text">25K</span><span class="stat-label">м² спроектировано</span></div>
+          <div class="stat"><span class="stat-num accent-text">8</span><span class="stat-label">Стран</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 1: SERVICES ── -->
+    <section class="page" id="page-1">
+      <div class="page-inner">
+        <h2 class="section-title">Наши <span class="accent-text">услуги</span></h2>
+        <p class="section-sub">Комплексный подход от идеи до реализации</p>
+        <div class="cards-grid services-grid">
+          <div class="card reveal">
+            <div class="card-icon">📐</div>
+            <h3>Архитектурное проектирование</h3>
+            <p>Концепция, эскизный проект, рабочая документация. Частные дома, виллы, многоквартирные комплексы. BIM-моделирование и авторский надзор.</p>
+            <div class="card-tag">от 2 500 ₽/м²</div>
+          </div>
+          <div class="card reveal">
+            <div class="card-icon">🎨</div>
+            <h3>Дизайн интерьера</h3>
+            <p>Планировочные решения, подбор материалов и мебели, 3D-визуализация фотореалистичного качества. Все стили — от минимализма до арт-деко.</p>
+            <div class="card-tag">от 4 000 ₽/м²</div>
+          </div>
+          <div class="card reveal">
+            <div class="card-icon">🏗️</div>
+            <h3>Авторский надзор</h3>
+            <p>Контроль реализации на каждом этапе строительства. Выезды на объект, проверка соответствия проекту, корректировка решений в реальном времени.</p>
+            <div class="card-tag">от 80 000 ₽/мес</div>
+          </div>
+          <div class="card reveal">
+            <div class="card-icon">🛋️</div>
+            <h3>Комплектация</h3>
+            <p>Подбор и закупка мебели, освещения, декора и отделочных материалов. Работа с европейскими и российскими фабриками. Логистика и таможня.</p>
+            <div class="card-tag">Персональный менеджер</div>
+          </div>
+          <div class="card reveal">
+            <div class="card-icon">🏢</div>
+            <h3>Коммерческие объекты</h3>
+            <p>Офисы, рестораны, отели, шоурумы. Пространства, которые усиливают бренд и повышают конверсию. Учитываем потоки, эргономику, нормы.</p>
+            <div class="card-tag">HoReCa & Retail</div>
+          </div>
+          <div class="card reveal">
+            <div class="card-icon">🌿</div>
+            <h3>Ландшафтный дизайн</h3>
+            <p>Проектирование придомовой территории: террасы, патио, зоны отдыха, освещение, озеленение. Интеграция с архитектурой дома.</p>
+            <div class="card-tag">Экосистемный подход</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 2: PORTFOLIO ── -->
+    <section class="page" id="page-2">
+      <div class="page-inner">
+        <h2 class="section-title">Наши <span class="accent-text">проекты</span></h2>
+        <p class="section-sub">Избранные работы студии</p>
+        <div class="cards-grid portfolio-grid">
+          <div class="card project-card reveal">
+            <div class="project-tag">Архитектура</div>
+            <h3>Резиденция «Сосны»</h3>
+            <p class="project-meta">📍 Рублёво-Успенское ш. &bull; 620 м²</p>
+            <p>Минималистичная вилла с плоской кровлей. Панорамное остекление, интеграция с ландшафтом. Натуральный камень, термодерево, кортеновская сталь.</p>
+            <div class="project-stats"><span>🏆 Best Private House 2024</span></div>
+          </div>
+          <div class="card project-card reveal">
+            <div class="project-tag tag-interior">Интерьер</div>
+            <h3>Пентхаус «Москва-Сити»</h3>
+            <p class="project-meta">📍 Башня «Федерация» &bull; 340 м²</p>
+            <p>Современный интерьер с элементами арт-деко. Мрамор Calacatta, латунь, шпон эвкалипта. Мебель на заказ Minotti и B&B Italia.</p>
+            <div class="project-stats"><span>✨ AD Russia Feature</span></div>
+          </div>
+          <div class="card project-card reveal">
+            <div class="project-tag tag-commercial">Коммерческий</div>
+            <h3>Ресторан «Ботаника»</h3>
+            <p class="project-meta">📍 Москва, Патриаршие &bull; 180 м²</p>
+            <p>Биофильный дизайн — живые стены, водные элементы, акустические панели из мха. Специализированное освещение для атмосферы fine-dining.</p>
+            <div class="project-stats"><span>🍽️ Michelin Guide Moscow</span></div>
+          </div>
+          <div class="card project-card reveal">
+            <div class="project-tag">Архитектура</div>
+            <h3>Вилла на Лазурном берегу</h3>
+            <p class="project-meta">📍 Франция, Канны &bull; 480 м²</p>
+            <p>Модернистская вилла на склоне с видом на Средиземное море. Каскадные террасы, бесконечный бассейн, умный дом Crestron.</p>
+            <div class="project-stats"><span>🌊 International Project</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 3: PROCESS ── -->
+    <section class="page" id="page-3">
+      <div class="page-inner">
+        <h2 class="section-title">Как мы <span class="accent-text">работаем</span></h2>
+        <p class="section-sub">Прозрачный процесс от первой встречи до сдачи ключей</p>
+        <div class="process-timeline">
+          <div class="process-step card reveal">
+            <div class="step-number">01</div>
+            <h3>Знакомство и бриф</h3>
+            <p>Первая встреча в студии или на объекте. Обсуждаем ваш образ жизни, вкус, бюджет. Составляем подробное техническое задание.</p>
+            <div class="step-duration">1–2 недели</div>
+          </div>
+          <div class="process-step card reveal">
+            <div class="step-number">02</div>
+            <h3>Концепция</h3>
+            <p>Разрабатываем 2–3 концептуальных направления. Мудборды, планировки, предварительные визуализации. Вы выбираете — мы дорабатываем.</p>
+            <div class="step-duration">2–4 недели</div>
+          </div>
+          <div class="process-step card reveal">
+            <div class="step-number">03</div>
+            <h3>Проектирование</h3>
+            <p>Детальная разработка: чертежи, развёртки, узлы, спецификации. BIM-модель, фотореалистичные рендеры. Согласование каждой детали.</p>
+            <div class="step-duration">4–8 недель</div>
+          </div>
+          <div class="process-step card reveal">
+            <div class="step-number">04</div>
+            <h3>Комплектация</h3>
+            <p>Подбираем и заказываем всё — от плитки до дверных ручек. Работаем напрямую с фабриками. Контролируем логистику и сроки поставки.</p>
+            <div class="step-duration">4–12 недель</div>
+          </div>
+          <div class="process-step card reveal">
+            <div class="step-number">05</div>
+            <h3>Реализация и надзор</h3>
+            <p>Авторский надзор на объекте. Контроль качества, соответствия проекту, координация подрядчиков. Еженедельные фотоотчёты.</p>
+            <div class="step-duration">3–12 месяцев</div>
+          </div>
+          <div class="process-step card reveal">
+            <div class="step-number">06</div>
+            <h3>Сдача проекта</h3>
+            <p>Финальная уборка, стайлинг, профессиональная фотосъёмка. Передача документации, гарантийных сертификатов и ключей.</p>
+            <div class="step-duration">Гарантия 2 года</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 4: ABOUT ── -->
+    <section class="page" id="page-4">
+      <div class="page-inner">
+        <h2 class="section-title">О <span class="accent-text">студии</span></h2>
+        <p class="section-sub">Команда, которой доверяют</p>
+        <div class="cards-grid about-grid">
+          <div class="card reveal">
+            <div class="card-icon">🎓</div>
+            <h3>Команда</h3>
+            <p>18 архитекторов и дизайнеров с образованием МАрхИ, Stroganovka, Polimoda. Средний опыт — 10 лет. Каждый проект ведёт главный архитектор лично.</p>
+          </div>
+          <div class="card reveal">
+            <div class="card-icon">🏅</div>
+            <h3>Награды</h3>
+            <p>Лауреаты INTERIOR+ Awards, AD Russia Best Interior, European Property Awards. Публикации в Elle Decoration, AD, SALON.</p>
+          </div>
+          <div class="card reveal">
+            <div class="card-icon">🤝</div>
+            <h3>Партнёры</h3>
+            <p>Официальные партнёры Poliform, Rimadesio, Flos, Delta Light, Kerama Marazzi. Доступ к коллекциям до старта продаж.</p>
+          </div>
+          <div class="card reveal">
+            <div class="card-icon">💎</div>
+            <h3>Подход</h3>
+            <p>Не «красивые картинки», а реализуемые решения. Каждый рендер — это точная инструкция для строителей. 98% наших проектов реализованы.</p>
+          </div>
+        </div>
+        <div class="testimonials-row">
+          <div class="testimonial card reveal">
+            <blockquote>«АрхДизайн спроектировали нам дом мечты. Процесс был прозрачным — мы видели каждый этап в 3D ещё до начала стройки. Результат превзошёл ожидания.»</blockquote>
+            <cite>— Дмитрий и Елена М., Рублёво-Успенское шоссе</cite>
+          </div>
+          <div class="testimonial card reveal">
+            <blockquote>«Пентхаус в Сити — наш третий проект с ними. Ни один подрядчик не знает наш вкус лучше, чем команда АрхДизайн. Абсолютное доверие.»</blockquote>
+            <cite>— Андрей С., Москва-Сити</cite>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 5: CONTACTS ── -->
+    <section class="page" id="page-5">
+      <div class="page-inner">
+        <h2 class="section-title">Начнём <span class="accent-text">проект</span></h2>
+        <p class="section-sub">Запишитесь на бесплатную консультацию</p>
+        <div class="contact-layout">
+          <form class="contact-form card reveal" id="contactForm">
+            <input type="text" placeholder="Ваше имя" required id="inputName">
+            <input type="tel" placeholder="+7 (___) ___-__-__" required id="inputPhone">
+            <select id="inputService">
+              <option value="">Тип проекта</option>
+              <option>Архитектурное проектирование</option>
+              <option>Дизайн интерьера квартиры</option>
+              <option>Дизайн интерьера дома</option>
+              <option>Коммерческий объект</option>
+              <option>Комплексный проект (архитектура + интерьер)</option>
+              <option>Ландшафтный дизайн</option>
+            </select>
+            <textarea placeholder="Расскажите о проекте: площадь, локация, стиль, бюджет" rows="3" id="inputMessage"></textarea>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">Записаться на консультацию</button>
+          </form>
+          <div class="contact-info card reveal">
+            <div class="contact-row">
+              <span class="contact-icon">📞</span>
+              <div><strong>Телефон</strong><a href="tel:+74951234567">+7 (495) 123-45-67</a></div>
+            </div>
+            <div class="contact-row">
+              <span class="contact-icon">📧</span>
+              <div><strong>Email</strong><a href="mailto:studio@archdesign.ru">studio@archdesign.ru</a></div>
+            </div>
+            <div class="contact-row">
+              <span class="contact-icon">📍</span>
+              <div><strong>Студия</strong><span>Москва, Пречистенка, 8, стр. 1</span></div>
+            </div>
+            <div class="contact-row">
+              <span class="contact-icon">🕐</span>
+              <div><strong>Приём</strong><span>Пн–Пт: 10:00 – 19:00, по записи</span></div>
+            </div>
+            <div class="contact-row">
+              <span class="contact-icon">💬</span>
+              <div><strong>Мессенджеры</strong><span>WhatsApp • Telegram</span></div>
+            </div>
+            <div class="contact-row">
+              <span class="contact-icon">📸</span>
+              <div><strong>Соцсети</strong><span>Instagram • Pinterest • Behance</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
