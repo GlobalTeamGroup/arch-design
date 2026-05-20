@@ -4,6 +4,7 @@ veo_clips/
 !frames-webp/
 !frames-mobile/
 !assets/
+!assets/*.png
 node_modules/
 .DS_Store
 Thumbs.db
